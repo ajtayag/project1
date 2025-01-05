@@ -1,0 +1,120 @@
+/* Jose Albereto Tayag, 000907201
+        January 29, 2024 */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poor Story", system-ui;
+}
+body {
+  background-color: #776b5d;
+  animation-name: backgroundChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+p {
+  font-family: "Poor Story", system-ui;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #f4dfba;
+  }
+  25% {
+    background-color: #eec373;
+  }
+  50% {
+    background-color: #eec373;
+  }
+  75% {
+    background-color: #876445;
+  }
+  100% {
+    background-color: #776b5d;
+  }
+}
+header {
+  margin-top: 20px;
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  animation: h1Animation;
+  animation-duration: 10s;
+  animation-iteration-count: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  color: #212121;
+}
+
+@keyframes h1Animation {
+  0% {
+    left: -1300px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 1300px;
+  }
+}
+
+h2 {
+  font-weight: lighter;
+  position: relative;
+  animation: h2Animation;
+  animation-duration: 10s;
+  animation-iteration-count: 2s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  color: #212121;
+}
+
+@keyframes h2Animation {
+  0% {
+    right: -1300px;
+  }
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: 1300px;
+  }
+}
+
+.buttonstyle {
+  color: white;
+  background-color: #c8b6a6;
+  border-radius: 18%;
+}
+
+.buttonstyle:hover {
+  background-color: #f5eee6;
+  color: black;
+}
+
+.buttonstyle:active {
+  background-color: #f5eee6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.container {
+  margin-top: 20px;
+  border: solid grey 1px;
+  padding: 15px;
+  border-radius: 3%;
+  background-color: #e4dccf;
+}
+
+#italic {
+  font-style: italic;
+}
+footer {
+  margin-top: 10px;
+  text-align: center;
+}
